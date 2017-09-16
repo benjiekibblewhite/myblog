@@ -1,0 +1,16 @@
+.filter-target {
+    transition: filter 0.5s ease-out;
+    background: #2eaef1;
+}
+
+.filter-target img {
+    display: block;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: filter 200ms ease-out, opacity 200ms ease-out;
+}
+
+.filter-target img:hover {
+    opacity: 1;
+    filter: grayscale(0);
+}

@@ -1,0 +1,15 @@
+<body class="body">
+    <div class="navbar-2 w-nav" data-animation="over-left" data-collapse="tiny" data-duration="400">
+        <div class="main-nav w-container">
+            <div class="menu-button w-hidden-main w-hidden-medium w-hidden-small w-nav-button">
+                <div class="icon"><i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div><a class="brand-2 w-nav-brand" href="{{site.url}}"><img class="image-3" height="180" src="{{site.url}}{{site.logo}}" width="425"></a>
+            <nav class="nav-menu w-nav-menu" role="navigation">
+                {% for item in site.data.nav_data.docs %}
+                    <a class="nav-link w-nav-link scale-on-hover" href="{{ site.url}}/{{ item.url }}">{{ item.title }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+    </div>
+    <div class="header-background"></div>

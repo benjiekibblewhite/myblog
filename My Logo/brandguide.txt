@@ -1,0 +1,4 @@
+Main text Font: ArgentCF Regular
+Slogan Text Font: Rancang Regular
+Color HEX: #2eaef1
+Color HSL: 188.823529412 52.5490196078 26.2745098039

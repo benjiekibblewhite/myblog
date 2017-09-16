@@ -1,0 +1,16 @@
+{% include head.html %} {% include header.html %}
+<main>
+    <div class="content">
+        <div class="content-centered">
+            {% for post in site.posts %}
+        	<div class="blog-post">
+            <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}
+">{{ post.title }}</a></h2>
+            <div class="post-date">{{ post.date | date: "%m.%d.%y" }}</div>
+            <p class="post-preview post_margin-left">{{ post.excerpt }}</p>
+        	</div>
+        {% endfor %}
+    	</div>
+	</div>
+</main>
+{% include footer.html %}

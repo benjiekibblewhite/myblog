@@ -1,0 +1,19 @@
+{% include head.html %} {% include header.html %}
+<main>
+    <div class="content">
+        <div class="row w-row">
+            {% for post in site.portfolio %}
+            <div class="portfolio-column w-col w-col-4">
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    <div class="portfolio-container card scale-on-hover">
+                        <h3 class="portfolio-title">{{ post.title }}</h3>
+                        <img class="portfolio-thumb" src="{{site.baseurl}}{{post.screenshot}}">
+                        <p class="portfolio-description">{{post.description}}</p>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+{% include footer.html %}
